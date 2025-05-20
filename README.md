@@ -1,6 +1,6 @@
 # inomarket
 
-A new Flutter project.
+A mobile application. a Flutter project.
 
 ## Getting Started
 
