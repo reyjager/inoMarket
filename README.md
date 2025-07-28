@@ -1,17 +1,1 @@
-# inomarket
-
-A mobile application. a Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-# inoMarket
+<img width="2537" height="1397" alt="Screenshot 2025-07-28 230726" src="https://github.com/user-attachments/assets/6388a5c1-80aa-426c-b8db-c44ed0d41d11" />
