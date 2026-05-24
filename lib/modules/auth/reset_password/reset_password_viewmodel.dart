@@ -3,8 +3,8 @@ import 'dart:developer';
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:inomarket/auth/reset_password/change_password_successfully.dart';
-import 'package:inomarket/auth/signin/signin_view.dart';
+import 'package:inomarket/modules/auth/reset_password/change_password_successfully.dart';
+import 'package:inomarket/modules/auth/signin/signin_view.dart';
 import 'package:stacked/stacked.dart';
 
 class ForgotPasswordViewModel extends BaseViewModel {

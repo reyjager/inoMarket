@@ -1,15 +1,21 @@
 import 'package:flutter/material.dart';
 import 'package:get/get_core/src/get_main.dart';
 import 'package:get/route_manager.dart';
-import 'package:inomarket/auth/helper/auth_result.dart';
+import 'package:inomarket/modules/auth/helper/auth_result.dart';
+import 'package:inomarket/modules/auth/service/auth_service.dart';
 import 'package:stacked/stacked.dart';
 
 class SignupViewmodel extends BaseViewModel {
+  AuthenticationService authService = AuthenticationService();
+  RegisterStage stage = RegisterStage.fillUpForm;
   TextEditingController nameCtrl = TextEditingController();
   TextEditingController passwordCtrl = TextEditingController();
   TextEditingController phoneCtrl = TextEditingController();
   bool showPassword = false;
   String? _errorMessage;
+  String? verifiedName;
+  String? verifiedPassword;
+  String? verifiedPhone;
 
   String get errorMessage => _errorMessage ?? "";
 
@@ -29,29 +35,29 @@ class SignupViewmodel extends BaseViewModel {
   }
 
   submit() async {
-    // try {
-    //   stage = RegisterStage.loading;
-    //   _errorMessage = null;
-    //   notifyListeners();
-    String phone = _validatePhone();
-    //   String password = _validatePassword();
-    //   String name = _validateName();
+    try {
+      stage = RegisterStage.loading;
+      _errorMessage = null;
+      notifyListeners();
+      String phone = _validatePhone();
+      String password = _validatePassword();
+      String name = _validateName();
 
-    //   verifiedName = name;
-    //   verifiedPassword = password;
-    //   verifiedPhone = phone;
+      verifiedName = name;
+      verifiedPassword = password;
+      verifiedPhone = phone;
 
-    //   print(verifiedPhone);
+      print(verifiedPhone);
 
-    //   await authService.register(name, phone, password);
-    //   stage = RegisterStage.otp;
-    //   notifyListeners();
-    // } catch (e) {
-    //   _errorMessage = e.toString();
-    //   stage = RegisterStage.fillUpForm;
-    //   notifyListeners();
-    //   return;
-    // }
+      // await authService.registerWithEmailAndPhone(name, phone, password);
+      stage = RegisterStage.otp;
+      notifyListeners();
+    } catch (e) {
+      _errorMessage = e.toString();
+      stage = RegisterStage.fillUpForm;
+      notifyListeners();
+      return;
+    }
   }
 
   String _validatePhone() {
@@ -90,4 +96,10 @@ class SignupViewmodel extends BaseViewModel {
     }
     return name;
   }
+}
+
+enum RegisterStage {
+  fillUpForm,
+  loading,
+  otp,
 }

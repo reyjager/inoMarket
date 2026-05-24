@@ -3,8 +3,16 @@ import 'package:permission_handler/permission_handler.dart';
 import 'package:stacked/stacked.dart';
 
 class HomeViewmodel extends BaseViewModel {
-  HomeViewModel() {
+  bool _isBalanceVisible = true;
+  bool get isBalanceVisible => _isBalanceVisible;
+
+  HomeViewmodel() {
     initPosition();
+  }
+
+  void toggleBalanceVisibility() {
+    _isBalanceVisible = !_isBalanceVisible;
+    notifyListeners();
   }
 
   initPosition() async {

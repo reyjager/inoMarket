@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:inomarket/auth/signin/signin_view.dart';
-import 'package:inomarket/home/home_view.dart';
+import 'package:inomarket/modules/auth/signin/signin_view.dart';
+import 'package:inomarket/modules/auth/signup/signup_view.dart';
+import 'package:inomarket/modules/home/home_view.dart';
 import 'package:inomarket/themes/theme_service.dart';
 
 class MyApp extends StatefulWidget {
@@ -22,7 +23,7 @@ class _MyAppState extends State<MyApp> {
         primarySwatch: ThemeService.currentColorScheme.primaryColor,
         fontFamily: 'Cairo',
       ),
-      home: const HomeView(),
+      home: const SignupView(),
     );
   }
 }

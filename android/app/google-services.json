@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "860647598710",
+    "project_id": "inomarket-app",
+    "storage_bucket": "inomarket-app.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:860647598710:android:413851e122f6ef3c4acd57",
+        "android_client_info": {
+          "package_name": "com.example.inomarket"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCCnMwXyPYX1COqKIQxISItodkhYzzaE3A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

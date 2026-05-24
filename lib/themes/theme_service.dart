@@ -24,13 +24,14 @@ class ThemeService {
     height: 1.5,
     fontWeight: FontWeight.w100,
   );
-  static TextStyle _normalTextLight =
-      _normalText.copyWith(color: _currentColorScheme.primaryColor);
 
   static TextStyle get normalText => _normalText.copyWith(
         color: _currentColorScheme.primaryColor,
       );
-  static TextStyle get normalTextLight => _normalTextLight;
+  
+  static TextStyle get normalTextLight => _normalText.copyWith(
+        color: _currentColorScheme.primaryColor,
+      );
 
   static const TextStyle _smallText = TextStyle(
     fontSize: 12,

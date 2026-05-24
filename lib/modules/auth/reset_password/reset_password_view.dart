@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:inomarket/auth/reset_password/reset_password_viewmodel.dart';
+import 'package:inomarket/modules/auth/reset_password/reset_password_viewmodel.dart';
 import 'package:inomarket/themes/theme_service.dart';
 import 'package:inomarket/widget/message/message_widget.dart';
 import 'package:pin_code_fields/pin_code_fields.dart';

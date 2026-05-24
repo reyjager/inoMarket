@@ -1,4 +1,4 @@
-import 'package:inomarket/auth/service/global_auth_service.dart';
+import 'package:inomarket/modules/auth/service/global_auth_service.dart';
 
 class Address {
   final int? id;

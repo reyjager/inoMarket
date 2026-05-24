@@ -1,6 +1,6 @@
 import 'package:flutter/services.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:inomarket/auth/signup/signup_viewmodel.dart';
+import 'package:inomarket/modules/auth/signup/signup_viewmodel.dart';
 import 'package:inomarket/themes/theme_service.dart';
 import 'package:inomarket/widget/button/button_widget.dart';
 import 'package:inomarket/widget/message/message_widget.dart';
@@ -193,7 +193,7 @@ class SignupView extends StatelessWidget {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text(
-                                'By registering on the Atheer platform, you agree to',
+                                'By registering on the InoMarket platform, you agree to',
                                 style: ThemeService.smallText.copyWith(
                                   height: 1.2,
                                   color: ThemeService

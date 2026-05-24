@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get_core/src/get_main.dart';
 import 'package:get/route_manager.dart';
-import 'package:inomarket/auth/reset_password/reset_password_view.dart';
-import 'package:inomarket/auth/signup/signup_view.dart';
+import 'package:inomarket/modules/auth/reset_password/reset_password_view.dart';
+import 'package:inomarket/modules/auth/signup/signup_view.dart';
 import 'package:stacked/stacked.dart';
 
 class SignInViewmodel extends BaseViewModel {

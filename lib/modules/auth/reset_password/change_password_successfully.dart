@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:inomarket/auth/signin/signin_view.dart';
+import 'package:inomarket/modules/auth/signin/signin_view.dart';
 import 'package:inomarket/themes/theme_service.dart';
 
 class PasswordChangedSuccessfullyView extends StatelessWidget {
